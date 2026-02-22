@@ -1,0 +1,13 @@
+{
+  "hooks": [
+    {
+      "name": "bootstrap-plugin-patterns",
+      "description": "Injects plugin quality standards context at the start of every session. Ensures Claude always applies the plugin-patterns skill when building or reviewing plugin components.",
+      "event": "SessionStart",
+      "type": "prompt",
+      "config": {
+        "prompt": "<EXTREMELY_IMPORTANT>\nYou are working in a project that uses the plugin-forge plugin. This plugin is used to create high-quality Claude Code plugins.\n\nBefore responding to any user message that involves creating, editing, or reviewing plugin components:\n\n1. ALWAYS load the plugin-patterns skill using the Skill tool first\n2. The skill defines REQUIRED standards — not suggestions\n3. Apply all patterns in the skill as mandatory requirements\n\nPlugin components include: SKILL.md files, commands, agents, hooks, plugin.json, and README files.\n\nSkipping the plugin-patterns skill when working on any plugin component is a quality failure. Load it first. Every time.\n</EXTREMELY_IMPORTANT>"
+      }
+    }
+  ]
+}

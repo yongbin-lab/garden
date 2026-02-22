@@ -1,0 +1,45 @@
+{
+  "name": "plugin-forge",
+  "version": "1.0.0",
+  "description": "High-quality Claude Code plugin builder. Guides you through a 7-phase workflow — from concept to validated, production-ready plugin — using parallel agents and proven design patterns.",
+  "author": {
+    "name": "Evan Kim",
+    "email": "evan.kim@mathpresso.com"
+  },
+  "commands": [
+    {
+      "name": "create",
+      "description": "Start a guided 7-phase plugin creation workflow",
+      "file": "commands/create.md"
+    }
+  ],
+  "agents": [
+    {
+      "name": "needs-analyzer",
+      "description": "Analyzes plugin concept and determines optimal component architecture",
+      "file": "agents/needs-analyzer.md"
+    },
+    {
+      "name": "skill-architect",
+      "description": "Designs SKILL.md with progressive disclosure and strong trigger phrases",
+      "file": "agents/skill-architect.md"
+    },
+    {
+      "name": "component-builder",
+      "description": "Implements individual plugin components following best practices",
+      "file": "agents/component-builder.md"
+    },
+    {
+      "name": "quality-reviewer",
+      "description": "Validates plugin quality against high-bar standards",
+      "file": "agents/quality-reviewer.md"
+    }
+  ],
+  "skills": [
+    {
+      "name": "plugin-patterns",
+      "description": "This skill should be used when creating or reviewing any Claude Code plugin component — commands, agents, skills, hooks. Contains the distilled patterns from Anthropic's official plugin-dev and obra/superpowers.",
+      "file": "skills/plugin-patterns/SKILL.md"
+    }
+  ]
+}
