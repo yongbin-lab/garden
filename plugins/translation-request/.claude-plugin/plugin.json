@@ -1,0 +1,5 @@
+{
+  "name": "translation-request",
+  "version": "1.0.0",
+  "description": "Automates creating translation request task cards in Notion's Global Translation project. Accepts a project Notion link and Lokalise URL, generates English descriptions, and creates fully-formed cards with correct assignees, locales, and deadlines."
+}
