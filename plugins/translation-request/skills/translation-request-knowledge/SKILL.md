@@ -31,7 +31,7 @@ These values MUST NOT be changed regardless of user input:
 
 | Property | How to Determine |
 |----------|-----------------|
-| `Project name` | Extract from project page title or context |
+| `Project name` | Extract from project page title or context. ALWAYS translate to concise, professional English if the title is in Korean. |
 | `Locale` | Determine from project page. ALWAYS confirm with user. Only use `ALL` if project explicitly targets all locales. |
 | `Assignee` | Map from locale. See `references/locale-assignee-mapping.md` for full mapping with User IDs. |
 | `deadline` | Calculate from sentence count. See `references/notion-db-schema.md` for rules and DB creation format. |

@@ -26,7 +26,7 @@ If the user requests a different Priority or Status, explain that these values a
 
 1. Fetch the project Notion page using `notion-fetch` with the project URL.
 2. Extract from the page:
-   - **Project name** (from title or heading)
+   - **Project name** (from title or heading). ALWAYS translate to concise, professional English if the title is in Korean.
    - **Project description** (Korean or English content describing the feature/project)
    - **Target locales** (look for locale/language information in properties or content)
    - **Figma links** (check properties and body for figma.com URLs)
