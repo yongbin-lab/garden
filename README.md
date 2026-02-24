@@ -14,6 +14,16 @@
 | [`til/`](./til) | Today I Learned - 짧은 학습 기록 |
 | [`projects/`](./projects) | 사이드 프로젝트 기획 & 아이디어 |
 
+## Using Plugins
+
+이 레포의 Claude Code 플러그인을 사용하려면:
+
+```bash
+git clone https://github.com/yongbin-lab/garden.git ~/.claude-plugins/garden
+```
+
+그 다음 `~/.claude/settings.json`에 원하는 플러그인 경로를 추가합니다. 자세한 내용은 [`plugins/README.md`](./plugins/README.md)를 참고하세요.
+
 ## How I Use This
 
 - 새로 배운 것은 `til/`에 빠르게 기록

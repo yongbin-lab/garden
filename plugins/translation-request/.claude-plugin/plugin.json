@@ -1,5 +1,29 @@
 {
   "name": "translation-request",
   "version": "1.0.0",
-  "description": "Automates creating translation request task cards in Notion's Global Translation project. Accepts a project Notion link and Lokalise URL, generates English descriptions, and creates fully-formed cards with correct assignees, locales, and deadlines."
+  "description": "Automates creating translation request task cards in Notion's Global Translation project. Accepts a project Notion link and Lokalise URL, generates English descriptions, and creates fully-formed cards with correct assignees, locales, and deadlines.",
+  "author": {
+    "name": "Mathpresso"
+  },
+  "commands": [
+    {
+      "name": "translation-request",
+      "description": "Creates a translation request task card in Notion's Global Translation DB from a project URL and Lokalise URL.",
+      "file": "commands/translation-request.md"
+    }
+  ],
+  "agents": [
+    {
+      "name": "notion-card-writer",
+      "description": "Specialized agent that takes finalized card data and creates the Notion page with correct formatting.",
+      "file": "agents/notion-card-writer.md"
+    }
+  ],
+  "skills": [
+    {
+      "name": "translation-request-knowledge",
+      "description": "Provides Global Translation Notion DB schema, locale-to-assignee mappings, card body template, and deadline calculation rules.",
+      "file": "skills/translation-request-knowledge/SKILL.md"
+    }
+  ]
 }
