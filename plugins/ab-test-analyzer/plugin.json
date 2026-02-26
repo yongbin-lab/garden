@@ -1,0 +1,39 @@
+{
+  "name": "ab-test-analyzer",
+  "version": "1.0.0",
+  "description": "A/B test metric design and result analysis plugin. Designs experiment metrics from planning documents and performs statistical analysis on experiment data from Mixpanel or Google Sheets.",
+  "author": {
+    "name": "Qanda PM Team"
+  },
+  "commands": [
+    {
+      "name": "ab-design",
+      "description": "Design A/B test metrics from a Notion planning document. Proposes primary/sub/guardrail metrics and outputs a metric spec matching Qanda's Metric Review template.",
+      "file": "commands/ab-design.md"
+    },
+    {
+      "name": "ab-analyze",
+      "description": "Analyze A/B test results from Mixpanel or Google Sheets. Runs statistical significance tests and provides scenario-based decision recommendations.",
+      "file": "commands/ab-analyze.md"
+    }
+  ],
+  "agents": [
+    {
+      "name": "stat-analysis",
+      "description": "Statistical computation agent for A/B testing. Selects tests, executes Python-based significance testing, and returns structured numerical results.",
+      "file": "agents/stat-analysis.md"
+    }
+  ],
+  "skills": [
+    {
+      "name": "ab-test-metric-design",
+      "description": "This skill should be used when the user asks \"어떤 지표 봐야 해?\", \"what metrics should I track\", \"성공 기준 정해줘\", \"PRD 보고 지표 설계해줘\", \"primary metric 뭘로 잡아야 해?\", \"guardrail metric이 뭐야?\", or \"가격 테스트 성공 기준\". Provides metric selection frameworks with Qanda-specific patterns including the Primary/Sub/Guardrail hierarchy, experiment-type templates, and segment analysis requirements.",
+      "file": "skills/ab-test-metric-design/SKILL.md"
+    },
+    {
+      "name": "ab-test-statistical-methods",
+      "description": "This skill should be used when the user asks \"이 결과 유의미해?\", \"is this result statistically significant\", \"p-value 해석해줘\", \"신뢰구간 계산해줘\", \"효과크기 어때?\", \"카이제곱 써야 해 t-test 써야 해?\", \"얼마나 더 돌려야 유의미해져?\", or \"결과가 애매한데 어떻게 해?\". Provides test selection logic, p-value interpretation, confidence interval computation, and a decision framework for inconclusive results with enforcement against p-hacking and optional stopping.",
+      "file": "skills/ab-test-statistical-methods/SKILL.md"
+    }
+  ]
+}

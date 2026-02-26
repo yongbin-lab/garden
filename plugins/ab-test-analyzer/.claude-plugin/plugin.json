@@ -1,0 +1,5 @@
+{
+  "name": "ab-test-analyzer",
+  "version": "1.0.0",
+  "description": "A/B test metric design and result analysis plugin. Designs experiment metrics from planning documents and performs statistical analysis on experiment data from Mixpanel or Google Sheets."
+}
