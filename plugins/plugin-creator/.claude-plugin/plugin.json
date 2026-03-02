@@ -1,0 +1,8 @@
+{
+  "name": "plugin-creator",
+  "description": "\"플러그인 만들어줘\"라고 말하면 대화형으로 Claude Code 플러그인을 설계하고 생성해주는 메타 플러그인",
+  "version": "1.0.0",
+  "author": {
+    "name": "yongbin"
+  }
+}

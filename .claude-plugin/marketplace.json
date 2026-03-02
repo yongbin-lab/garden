@@ -1,0 +1,58 @@
+{
+  "name": "garden",
+  "owner": {
+    "name": "Evan Kim",
+    "email": "evan.kim@mathpresso.com"
+  },
+  "metadata": {
+    "description": "Personal plugin garden",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "plugin-forge",
+      "source": "./plugins/plugin-forge",
+      "description": "High-quality Claude Code plugin builder with 7-phase workflow",
+      "version": "1.0.0",
+      "author": {
+        "name": "Evan Kim"
+      }
+    },
+    {
+      "name": "translation-request",
+      "source": "./plugins/translation-request",
+      "description": "Automates creating translation request task cards in Notion's Global Translation project",
+      "version": "1.0.0",
+      "author": {
+        "name": "Mathpresso"
+      }
+    },
+    {
+      "name": "plugin-creator",
+      "source": "./plugins/plugin-creator",
+      "description": "Interactive meta-plugin that designs and creates Claude Code plugins",
+      "version": "1.0.0",
+      "author": {
+        "name": "Evan Kim"
+      }
+    },
+    {
+      "name": "plugin-deployer",
+      "source": "./plugins/plugin-deployer",
+      "description": "Deploy Claude Code plugins to GitHub marketplace with one command",
+      "version": "1.0.0",
+      "author": {
+        "name": "Evan Kim"
+      }
+    },
+    {
+      "name": "ab-test-analyzer",
+      "source": "./plugins/ab-test-analyzer",
+      "description": "A/B test metric design and result analysis plugin",
+      "version": "1.0.0",
+      "author": {
+        "name": "Evan Kim"
+      }
+    }
+  ]
+}

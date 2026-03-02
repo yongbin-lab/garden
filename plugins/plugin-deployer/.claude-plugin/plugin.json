@@ -1,0 +1,8 @@
+{
+  "name": "plugin-deployer",
+  "description": "Claude Code 플러그인을 GitHub 마켓플레이스에 바로 배포해주는 플러그인. '배포해줘'라고 말하면 끝.",
+  "version": "1.0.0",
+  "author": {
+    "name": "yongbin"
+  }
+}
