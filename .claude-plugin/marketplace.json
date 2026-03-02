@@ -28,15 +28,6 @@
       }
     },
     {
-      "name": "plugin-creator",
-      "source": "./plugins/plugin-creator",
-      "description": "Interactive meta-plugin that designs and creates Claude Code plugins",
-      "version": "1.0.0",
-      "author": {
-        "name": "Evan Kim"
-      }
-    },
-    {
       "name": "plugin-deployer",
       "source": "./plugins/plugin-deployer",
       "description": "Deploy Claude Code plugins to GitHub marketplace with one command",
